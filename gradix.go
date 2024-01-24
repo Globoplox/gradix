@@ -67,9 +67,9 @@ func (self *Radix[P]) add(path []string, payload P) {
 // Match result
 type Result[P any] struct {
   // The payload of the added path that matched
-  payload P
+  Payload P
   // The values of the wildcard components of the match
-  parameters map[string]string
+  Parameters map[string]string
 }
 
 // Search the radix tree with a given path.
