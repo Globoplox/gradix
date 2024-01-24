@@ -24,6 +24,7 @@ func main() {
   radix.Add("/users/:user_id/friends/:friend_id", "...")
   radix.Add("/users/:user_id/friends/", "...")
   fmt.Printf("%v\n", radix.Search("/users/toto")) // => [{Get a user by id map[id:toto]}]
+  fmt.Printf("%v\n", radix.Search("/users/toto/")) // => [{Get a user by id map[id:toto]}]
   fmt.Printf("%v\n", radix.Search("/users/self")) // => [{Get the current user map[]} {Get a user by id map[id:self]}]
   fmt.Printf("%v\n", radix.Search("/test")) // => []
   fmt.Printf("%v\n", radix.Search("nowhere")) // => []
