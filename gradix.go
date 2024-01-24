@@ -1,6 +1,6 @@
 // A simple radix like tree specialized for URL path routing
 // with supports for wildcards.
-module github.com/globoplox/gradix
+package gradix
 
 import (
 	"maps"
