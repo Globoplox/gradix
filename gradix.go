@@ -3,7 +3,7 @@
 package gradix
 
 import (
-	"maps"
+  "maps"
   "strings"
 )
 

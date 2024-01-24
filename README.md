@@ -28,6 +28,6 @@ func main() {
   fmt.Printf("%v\n", radix.Search("/test")) // => []
   fmt.Printf("%v\n", radix.Search("nowhere")) // => []
   fmt.Printf("%v\n", radix.Search("")) // => []
+  fmt.Printf("%v\n", radix.Search("/////")) // => []
 }
-
 ```
